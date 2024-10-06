@@ -1,6 +1,5 @@
 import Plushie from "./Plushie"
 import { useMemo } from "react"
-import logo from './img/logo.png';
 
 function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart}){
 
@@ -20,7 +19,7 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                     <div 
                         className="cart"
                     >
-                        <img className="img-fluid" src="./img/cart.PNG" alt="cart image" />
+                        <img className="img-fluid" src="{`${process.env.PUBLIC_URL}/img/logo.png`}" alt="cart image" />
 
                         <div id="cart" className="bg-white p-3">
                           { isEmpty ? (
