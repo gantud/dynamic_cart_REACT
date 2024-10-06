@@ -1,6 +1,6 @@
 import Plushie from "./Plushie"
 import { useMemo } from "react"
-import logo from 'public/img/logo.png';
+import logo from './img/logo.png';
 
 function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart}){
 
