@@ -43,7 +43,7 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                                     <tr key={plushie.id}>
                                         <td>
 <<<<<<< HEAD
-                                        <img className="img-fluid" src=".img/plushie_01.jpg" alt="Pokemon Plush"/>
+                                        <img className="img-fluid" src=`.img/${plushie.image}.jpg`} alt="Pokemon Plush"/>
                                         </td>
                                         <td>{plushie.name}</td>
                                         <td className="fw-bold">
