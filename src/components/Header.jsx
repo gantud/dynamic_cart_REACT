@@ -22,9 +22,6 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                     >
 <<<<<<< HEAD
                     <img className="img-fluid" src="./img/cart.png" alt="cart image" />
-=======
-                        <img className="img-fluid" src="{`${process.env.PUBLIC_URL}/img/cart.png`}" alt="cart image" />
->>>>>>> a993d016b078b4ea4b783db0a8802f429adad5d4
 
                         <div id="cart" className="bg-white p-3">
                           { isEmpty ? (
@@ -47,9 +44,6 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                                         <td>
 <<<<<<< HEAD
                                         <img className="img-fluid" src=".img/plushie_01.jpg" alt="Pokemon Plush"/>
-=======
-                                            <img className="img-fluid" src={`/dynamic_cart_REACT/img/${plushie.image}.jpg`} alt="Pokemon Plush" />
->>>>>>> a993d016b078b4ea4b783db0a8802f429adad5d4
                                         </td>
                                         <td>{plushie.name}</td>
                                         <td className="fw-bold">
