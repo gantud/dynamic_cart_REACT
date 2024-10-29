@@ -13,18 +13,14 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
             <div className="row justify-content-center justify-content-md-between">
                 <div className="col-8 col-md-3">
                     <a href="index.html">
-                    <img className="img-fluid" src="./img/logo.png" alt="imagen logo" />
+                    <img className="img-fluid" src={`${import.meta.env.BASE_URL}img/logo.PNG`} alt="imagen logo" />
                     </a>
                 </div>
                 <nav className="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
                     <div 
                         className="cart"
                     >
-<<<<<<< HEAD
-                    <img className="img-fluid" src="./img/cart.png" alt="cart image" />
-=======
-                        <img className="img-fluid" src="{`${process.env.PUBLIC_URL}/img/cart.png`}" alt="cart image" />
->>>>>>> a993d016b078b4ea4b783db0a8802f429adad5d4
+                    <img className="img-fluid" src={`${import.meta.env.BASE_URL}img/cart.png`} alt="cart image" />
 
                         <div id="cart" className="bg-white p-3">
                           { isEmpty ? (
@@ -45,11 +41,7 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                                     {cart.map(plushie => (
                                     <tr key={plushie.id}>
                                         <td>
-<<<<<<< HEAD
-                                        <img className="img-fluid" src=".img/plushie_01.jpg" alt="Pokemon Plush"/>
-=======
-                                            <img className="img-fluid" src={`/dynamic_cart_REACT/img/${plushie.image}.jpg`} alt="Pokemon Plush" />
->>>>>>> a993d016b078b4ea4b783db0a8802f429adad5d4
+                                        <img className="img-fluid" src={`${import.meta.env.BASE_URL}img/${plushie.image}.jpg`} alt="Pokemon Plush" />
                                         </td>
                                         <td>{plushie.name}</td>
                                         <td className="fw-bold">
