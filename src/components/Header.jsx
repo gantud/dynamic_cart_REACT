@@ -1,6 +1,7 @@
 import Plushie from "./Plushie"
 import { useMemo } from "react"
 
+
 function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clearCart}){
 
     const isEmpty = useMemo( () => cart.length === 0, [cart])
@@ -12,14 +13,14 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
             <div className="row justify-content-center justify-content-md-between">
                 <div className="col-8 col-md-3">
                     <a href="index.html">
-                        <img className="img-fluid" src="/img/logo.png" alt="imagen logo" />
+                    <img className="img-fluid" src="./img/logo.png" alt="imagen logo" />
                     </a>
                 </div>
                 <nav className="col-md-6 a mt-5 d-flex align-items-start justify-content-end">
                     <div 
                         className="cart"
                     >
-                        <img className="img-fluid" src="/img/cart.png" alt="cart image" />
+                    <img className="img-fluid" src="./img/cart.png" alt="cart image" />
 
                         <div id="cart" className="bg-white p-3">
                           { isEmpty ? (
@@ -40,7 +41,7 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                                     {cart.map(plushie => (
                                     <tr key={plushie.id}>
                                         <td>
-                                            <img className="img-fluid" src={`/img/${plushie.image}.jpg`} alt="Pokemon Plush" />
+                                        <img className="img-fluid" src=".img/plushie_01.jpg" alt="Pokemon Plush"/>
                                         </td>
                                         <td>{plushie.name}</td>
                                         <td className="fw-bold">
