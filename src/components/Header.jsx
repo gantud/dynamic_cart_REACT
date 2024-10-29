@@ -20,7 +20,6 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                     <div 
                         className="cart"
                     >
-<<<<<<< HEAD
                     <img className="img-fluid" src="./img/cart.png" alt="cart image" />
 
                         <div id="cart" className="bg-white p-3">
@@ -42,7 +41,6 @@ function Header({cart, removeFromCart, increaseQuantity, decreaseQuantity, clear
                                     {cart.map(plushie => (
                                     <tr key={plushie.id}>
                                         <td>
-<<<<<<< HEAD
                                         <img className="img-fluid" src={`.img/${plushie.image}.jpg`} alt="Pokemon Plush"/>
                                         </td>
                                         <td>{plushie.name}</td>
