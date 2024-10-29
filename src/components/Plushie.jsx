@@ -5,7 +5,6 @@ function Plushie({plushie, addCart}){
     return(
         <div className="col-md-6 col-lg-4 my-4 row align-items-center">
         <div className="col-4">
-<<<<<<< HEAD
             <img className="img-fluid" src={`./img/${image}.jpg`} alt="Pokemon Plush" />
         </div>
         <div className="col-8">
