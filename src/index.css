@@ -759,19 +759,3 @@ button:not(:disabled),
   background-size: cover;
   position: relative;
 }
-.header .header-guitarra {
-  display: none;
-}
-@media (min-width: 992px) {
-  .header .header-guitarra {
-    display: block;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    animation-duration: 1s;
-    animation-delay: 0s;
-    animation-timing-function: ease-in-out;
-    animation-name: animarImagen;
-    z-index: 10;
-  }
-}
